@@ -33,14 +33,21 @@
         </nav>
     </header>
     <section class="form-section">
-        <form method="POST" action="https://formdump.codeinstitute.net/">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
             <h2>Let's get you signed up!</h2>
-            <label id="fname">First Name</label>
-            <input for="fname" type="text" required>
-            <label id="lname">Last Name</label>
-            <input for="lname" type="text" name="last_name" required>
-            <label id="email">Email Address</label>
-            <input for="email" type="email" name="email_address" required>
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" name="first_name" class=".text-input" required>
+            <label for="lname">Last Name</label>
+            <input id="lname" type="text" name="last_name" class=".text-input" required>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email_address" class=".text-input" required>
+            <label for="road">Road</label>
+            <input type="radio" id="road" name="running_preference" value="road" class=".text-input" required>
+            <label for="trail">Trail</label>
+            <input type="radio" id="trail" name="running_preference" value="trail" class=".text-input">
+            <label for="both">Both</label>
+            <input type="radio" id="both" name="running_preference" value="both" class=".text-input">
+            <input type="submit" value="Let's Run!">
         </form>
     </section>
     <footer>
